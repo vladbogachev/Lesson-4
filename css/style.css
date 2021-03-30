@@ -1,0 +1,361 @@
+
+
+/* подключаем стили из макета (Lato и Lora) через F1 */
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+		url('../fonts/Gilroy-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-SemiBoldItalic.woff2') format('woff2'),
+		url('../fonts/Gilroy-SemiBoldItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* добавляем шрифт и его цвет */
+body {
+	color: #9A9A9A;
+	font-family: "lato";
+}
+
+/* .................... */
+
+
+/* применяю css параметры и свойства к тегу */
+
+h1 {
+	color: #DD2C00;
+	font-family: "Lora";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 250%;
+	text-shadow: 0px 4px 4px rgba(2, 3, 5, 0.541);
+	text-align: center;
+}
+
+/* применяю css параметры и свойства к селектору класса, */
+.menu__list {
+	font-family: "Lato";
+	color: #10375C;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	text-decoration: underline;
+}
+
+/* применяю css параметры и свойства к комбинации селекторов уточняю */
+.title span {
+	color: #10375C;
+	font-family: "Lora";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 250%;
+	text-shadow: 0px 4px 4px rgba(2, 3, 5, 0.541);
+	text-align: center;
+}
+
+.yellow span {
+	font-family: "Lato";
+	color: #DD2C00;
+	font-style: italic;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.green.menu__list, span {
+	color: #DD2C00;
+	font-size: 25px;
+}
+
+.brown span {
+	color: #DD2C00;
+	font-size: 25px;
+}
+
+/* Обратился только к первому уровеню вложенности */
+
+.paragraph > span {
+	font-family: "Lato";
+	color: #3de71a;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+p.paragraph {
+	font-family: "Lato";
+	color: #00a9dd;
+	font-style: normal;
+	font-size: 18px;
+	text-indent: 40px;
+	font-weight: 700;
+	line-height: 300%;
+	text-transform: none;
+	line-height: 28px
+}
+
+p.message{
+	font-family: "Lora";
+	color: #09d335;
+	font-style: italic;
+	font-size: 18px;
+	text-indent: 40px;
+	font-weight: 700;
+	text-transform: none;
+	line-height: 28px
+}
+
+.message span {
+	font-family: "Lora";
+	color: #3f1e74fb;
+	font-style: italic;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+#title-1 {
+	font-family: "Lora";
+	color: #f87204;
+	font-style: oblique;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 300%;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.image {
+	text-align: left;
+}
+h3.title {
+	font-family: "Lora";
+	color: #0c29d1;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 300%;
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px #000, 8px 9px 6px orange;
+	text-indent: 40px;
+	text-align: right;
+}
+
+.text.green {
+	font-family: "Lora";
+	color: orange;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 134%;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.text.yellow {
+	font-family: "Lora";
+	color: yellowgreen;
+	font-style: oblique;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 134%;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-indent: 40px;
+}
+
+.text {
+	font-family: "Lora";
+	color: #f30101;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 134%;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-indent: 40px;
+}
+
+.title-6 {
+	font-family: "Lora";
+	color: #0c29d1;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 300%;
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px #000, 8px 9px 6px orange;
+	text-indent: 40px;
+}
+
+.text.red {
+	font-family: "Lora";
+	color: #4ef301;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 134%;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-indent: 40px;
+}
+
+/* применяю css параметры и свойства к комбинации селекторов уточняю
+приоритет выше чем у других селекторов(из-за количества классов) */
+
+.text.block.indigo {
+	font-family: "Lato";
+	color: #ff0884b7;
+	font-style: italic;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 134%;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-indent: 40px;
+}
+
+#title-2 {
+	font-family: "Lora";
+	color: #043df8;
+	font-style: oblique;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 300%;
+	text-transform: capitalize;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.image.world {
+	text-align: center;
+
+}
+
+.text.item {
+	font-family: "Lato";
+	color: darkblue;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 200%;
+	text-decoration: underline;
+}
+
+.title-3 {
+	font-family: "Lato";
+	color: #c708ce;
+	font-style: oblique;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 300%;
+	text-transform: capitalize;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.text span {
+	font-family: "Lato";
+	color: #0083fd;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+p.text {
+	font-family: "Lato";
+	color: #0083fd;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: none;
+}
+
+li {
+	font-family: "Gilroy";
+	color: #b3b613;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: none;
+	word-spacing: 20px;
+}
+
+.image-3 {
+	text-align: center;
+}
+
+.footer {
+	font-family: "Lora";
+	color: #131313;
+	font-style: italic;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: none;
+	text-decoration: none;
+}
+
+ol {
+	font-family: "Lato";
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: none;
+}
